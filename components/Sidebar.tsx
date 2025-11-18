@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { View } from '../types';
-import { DashboardIcon, ProductIcon, CustomerIcon, SalesIcon, PurchaseIcon, ExpenseIcon, CashFlowIcon, ReportIcon } from './icons/Icons';
+import { DashboardIcon, ProductIcon, CustomerIcon, SalesIcon, PurchaseIcon, ExpenseIcon, CashFlowIcon, ReportIcon, CalculatorIcon } from './icons/Icons';
 
 interface SidebarProps {
   currentView: View;
@@ -17,6 +16,7 @@ const navItems: { view: View; label: string; icon: React.FC<{ className?: string
   { view: 'Expenses', label: 'Expenses (Pengeluaran)', icon: ExpenseIcon },
   { view: 'Cash Flow', label: 'Cash Flow', icon: CashFlowIcon },
   { view: 'Reports', label: 'Reports', icon: ReportIcon },
+  { view: 'Accounting', label: 'Accounting', icon: CalculatorIcon },
 ];
 
 const Sidebar: React.FC<SidebarProps> = ({ currentView, setCurrentView }) => {

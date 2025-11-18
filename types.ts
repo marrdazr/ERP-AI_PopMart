@@ -18,7 +18,7 @@ export interface Testimonial {
   avatarUrl: string;
 }
 
-export type View = 'Dashboard' | 'Products' | 'Customers' | 'Sales' | 'Purchases' | 'Expenses' | 'Cash Flow' | 'Reports';
+export type View = 'Dashboard' | 'Products' | 'Customers' | 'Sales' | 'Purchases' | 'Expenses' | 'Cash Flow' | 'Reports' | 'Accounting';
 
 export enum ProductSeries {
     Hirono = 'Hirono',

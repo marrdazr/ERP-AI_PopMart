@@ -19,6 +19,7 @@ import PurchasesPage from './pages/PurchasesPage';
 import ExpensesPage from './pages/ExpensesPage';
 import CashFlowPage from './pages/CashFlowPage';
 import ReportsPage from './pages/ReportsPage';
+import AccountingPage from './pages/AccountingPage';
 
 // Import Landing Page Components
 import Navbar from './components/landing/Navbar';
@@ -191,6 +192,8 @@ const App: React.FC = () => {
         return <CashFlowPage cashFlows={cashFlows} />;
       case 'Reports':
         return <ReportsPage sales={sales} products={products} customers={customers} />;
+      case 'Accounting':
+        return <AccountingPage sales={sales} products={products} expenses={expenses} />;
       default:
         return <DashboardPage sales={sales} products={products} customers={customers} expenses={expenses} />;
     }

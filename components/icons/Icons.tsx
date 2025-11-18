@@ -78,6 +78,11 @@ export const CashFlowIcon: React.FC<IconProps> = ({ className }) => (
         <path d="M4 10c-1.1.5-2 1.4-2 2.5 0 1.4 1.3 2.5 3 2.5h12c1.7 0 3-1.1 3-2.5 0-1.1-.9-2-2-2.5"/><path d="M8 10V6a4 4 0 1 1 8 0v4"/><path d="M12 10v10"/><path d="m16 16-4 4-4-4"/>
     </svg>
 );
+export const CalculatorIcon: React.FC<IconProps> = ({ className }) => (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="12" y1="10" x2="12" y2="18"></line><line x1="8" y1="14" x2="16" y2="14"></line>
+    </svg>
+);
 export const ReportIcon: React.FC<IconProps> = ({ className }) => (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>

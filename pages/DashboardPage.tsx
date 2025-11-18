@@ -51,8 +51,8 @@ const DashboardPage: React.FC<DashboardPageProps> = ({ sales, products, customer
     return acc;
   }, {} as Record<ProductSeries, number>);
 
-  // FIX: The sort function was changed to be more type-safe.
-  const bestSellingSeries = Object.entries(seriesSales).sort((a, b) => b[1] - a[1])[0]?.[0] || 'N/A';
+  // FIX: Explicitly cast sorting values to numbers to prevent type errors during arithmetic operations.
+  const bestSellingSeries = Object.entries(seriesSales).sort((a, b) => Number(b[1]) - Number(a[1]))[0]?.[0] || 'N/A';
 
   const salesDataForChart = sales
     .filter(s => s.status === 'Paid')
